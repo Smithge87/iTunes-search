@@ -1,3 +1,7 @@
+// html5 audiotag
+
+
+
 function cleanTerms(term){
   var cleanTerm = "";
   if(term != ""){
@@ -16,6 +20,7 @@ function parseForm(data){
 
 $('form').submit(function(event) {
   event.preventDefault();
+  $("#resultsTable tr").remove();
   var formData = [{
     			"artist":$("#artistName").val(),
     			"song": $("#songName").val(),
@@ -28,24 +33,27 @@ $('form').submit(function(event) {
 			dataType 	: "jsonp",
       success : function(results){
         parseResults(results);
-var name = "anything";
-      },
-      error : function(results){console.log(results)}
+    }
   });
-
 });
+
+
+
 function parseResults(result){
   for (let i=0;i<result.results.length;i++){
+    if ((result["results"][(i.toString())]["kind"])=="song"){
     currentResults = formatRow(result["results"][(i.toString())]);
-      if (i=0){
-      $("#resultsTable").html(currentResults);
-    }
-    else{
       $("#resultsTable").append(currentResults);
     }
   }
 }
 function formatRow(object){
-  cleanObject = "<tr> <td>"+object["artistName"]+"</td> <td>"+object["trackName"]+"</td> <td>"+object["collectionName"]+"</td> </tr>";
+  cleanObject =
+  "<tr><td><img src="+object["artworkUrl100"]+
+  " </td> <td>"+object["artistName"]+
+  "</td>  <td>"+object["trackName"]+
+  "</td> <td>"+object["collectionName"]+
+  "</td> <td><audio controls> <source src="+object["previewUrl"]+"></audio>"+
+  "</td> </tr>";
   return cleanObject;
 }

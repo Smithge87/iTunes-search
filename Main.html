@@ -11,37 +11,45 @@
     <link rel="stylesheet" type="text/css" href="SearchAPI.css">
 
 </head>
-<body>
+<body class="creamBox">
 
-  <div class="jumbotron jumbotron-fluid">
+  <div class="jumbotron jumbotron-fluid jumboBox">
     <div class="container">
-      <h1 class="display-3">Search API</h1>
-      <p class="lead">Welcome to it</p>
+      <h1 class="display-3" style="color:#ffd633"><b>Search API</b></h1>
+      <p class="lead redText"><b>Welcome to it</b></p>
     </div>
   </div>
-  <div class="container blueBox" style="width:20%; float:left; margin-left:5%">
-    <form id="requestForm">
-    <div class="form-group">
-      <label for="formGroupExampleInput">Artist</label>
-      <input type="text" class="form-control" id="artistName" placeholder="Artist Name">
-    </div>
-    <div class="form-group">
-      <label for="formGroupExampleInput2">Song</label>
-      <input type="text" class="form-control" id="songName" placeholder="Song Name">
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
+
+
+  <div class="container">
+    <div class="col-lg-3 blackBorder greyBox" style="width:20%; padding:10px">
+      <form id="requestForm">
+      <div class="form-group">
+        <label for="formGroupExampleInput">Artist</label>
+        <input type="text" class="form-control blackBorderSmall" id="artistName" placeholder="Artist Name">
+      </div>
+      <div class="form-group">
+        <label for="formGroupExampleInput2">Song</label>
+        <input type="text" class="form-control blackBorderSmall" id="songName" placeholder="Song Name">
+      </div>
+      <button type="submit" class="btn yellowBox blackBorderSmall">Submit</button>
+    </form>
+  </div>
+  <div class="col-lg-9">
+  </div>
 </div>
+<br>
 
 
-<div class="container">
-  <h2>RESULTS TABLE</h2>
+<div class="container blackBorder greyBox" style"width:100%">
   <table class="table">
     <thead>
-      <tr>
-        <th>ARTIST</th>
-        <th>SONG</th>
-        <th>ALBUM</th>
+      <tr class="blackBorderSmall" style="margin-bottom:20px">
+        <th></th>
+        <th class="tableTitle">ARTIST</th>
+        <th class="tableTitle">SONG</th>
+        <th class="tableTitle">ALBUM</th>
+        <th class="tableTitle">SAMPLE</th>
       </tr>
     </thead>
     <tbody id="resultsTable">
@@ -49,13 +57,7 @@
   </table>
 </div>
 
-</body>
-</html>
-<div class="container">
-  <ul id="artistList">
-    <li></li>
-  </ul>
-</div>
+
 
 
 <script src="SearchAPI.js"></script>
