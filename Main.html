@@ -9,16 +9,17 @@
     <meta name="Search API" content="Search API" />
     <title>Search API</title>
     <link rel="stylesheet" type="text/css" href="SearchAPI.css">
+
 </head>
 <body>
 
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <h1 class="display-3">Search API</h1>
-      <p class="lead">This is a search apparatus that interacta with the iTunes marketplace</p>
+      <p class="lead">Welcome to it</p>
     </div>
   </div>
-  <div class="container">
+  <div class="container blueBox" style="width:20%; float:left; margin-left:5%">
     <form id="requestForm">
     <div class="form-group">
       <label for="formGroupExampleInput">Artist</label>
@@ -31,68 +32,32 @@
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 </div>
-<div>
+
+
+<div class="container">
+  <h2>RESULTS TABLE</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ARTIST</th>
+        <th>SONG</th>
+        <th>ALBUM</th>
+      </tr>
+    </thead>
+    <tbody id="resultsTable">
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
+<div class="container">
   <ul id="artistList">
     <li></li>
   </ul>
-
 </div>
 
 
-<script>
-
-function parseForm(data){
-  var artist = "https://itunes.apple.com/search?term="+(data[0]["artist"]);
-  return artist;
-  }
-
-
-
-
-$('form').submit(function(event) {
-  event.preventDefault();
-  var formData = [{
-    			"artist":$("#artistName").val(),
-    			"song": $("#songName").val(),
-  }];
-  var points = parseForm(formData);
-
-  $.ajax({
-			type 		: "GET",
-			url 		: points,
-			dataType 	: "jsonp",
-      success : function(results){
-        parseResults(results);
-var name = "anything";
-      },
-      error : function(results){console.log(results)}
-  });
-
-});
-function parseResults(result){
-  var currentResults = ""
-  for (let i=0;i<result.results.length;i++){
-    currentResults = result["results"][(i.toString())]["artistName"];
-    if (i==0){
-        $("#artistList").html("<li>"+currentResults+"</li>");
-    }
-    else{
-        $("#artistList").append("<li>"+currentResults+"</li>");
-    }
-  }
-}
-
-</script>
-
-
-
-
-
-
-
-
-
-
-
+<script src="SearchAPI.js"></script>
 </body>
 </html>

@@ -1,0 +1,7 @@
+.blueBox{
+  border-style: groove;
+  border-width: 2px;
+  border-color:#000066;
+  padding: 10px;
+  border-radius: 10px;
+}
