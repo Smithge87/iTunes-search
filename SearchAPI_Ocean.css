@@ -1,14 +1,13 @@
-
 img{
   border-style:groove;
   border-width: 1px;
-  border-color: #1a1400;
+  border-color:  #7070db;
   border-radius: 4px;
 }
 tr{
-  border-top: 4px double #1a1400;
-  border-left: 2px solid #1a1400;
-  border-right: 2px solid #1a1400;
+  border-top: 4px double #7070db;
+  border-left: 2px solid #7070db;
+  border-right: 2px solid #7070db;
   max-width: 15%;
 }
 th{
@@ -25,14 +24,14 @@ th{
 .blackBorder{
   border-style:groove;
   border-width: 4px;
-  border-color: #1a1400;
+  border-color: #7070db;
   padding: 10px;
   border-radius: 10px;
 }
 .blackBorderSmall{
   border-style: solid;
   border-width: 2px;
-  border-color: #1a1400;
+  border-color: #7070db;
   border-radius: 4px;
 }
 .tableTitle{
@@ -40,23 +39,23 @@ th{
   /*text-shadow: 1px 0px 3px #FFFF00;*/
 }
 .jumboBox{
-  background-color: #1a1400;
+  background-color: #7070db;
 }
 .yellowText{
-  color: #ffd633;
+  color: #ffff80;
 }
 .yellowBox{
-  background-color:  #ffd633;
+  background-color:  #ffff80;
 }
 .yellowShadow{
-  text-shadow: 1px 0px 3px #ffd633;
+  text-shadow: 1px 0px 3px #ffff80;
 }
 .redText{
-  color: #ff3333;
+  color: #ffe066;
 }
 .creamBox{
   background-color: #ffffcc;
 }
 .greyBox{
-  background-color: #d9d9d9;
+  background-color: #80aaff;
 }
