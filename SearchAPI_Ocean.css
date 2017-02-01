@@ -13,7 +13,20 @@ tr{
 th{
   text-align: center;
 }
-
+#bannerLeft{
+  background-image: url(images/ocean.jpeg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 7%;
+  background-repeat:repeat-y;
+}
+#bannerRight{
+  background-image: url(images/ocean.jpeg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 7%;
+  background-repeat:repeat-y;
+}
 .blueBorder{
   border-style:groove;
   border-width: 4px;
