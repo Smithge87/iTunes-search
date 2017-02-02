@@ -9,6 +9,7 @@ tr{
   border-left: 2px solid #7070db;
   border-right: 2px solid #7070db;
   max-width: 15%;
+  color: black;
 }
 th{
   text-align: center;
@@ -34,7 +35,14 @@ th{
   padding: 10px;
   border-radius: 10px;
 }
-.blackBorder{
+.blackBorderOne{
+  border-style:groove;
+  border-width: 4px;
+  border-color: #7070db;
+  padding: 10px;
+  border-radius: 10px;
+}
+.blackBorderTwo{
   border-style:groove;
   border-width: 4px;
   border-color: #7070db;
@@ -68,6 +76,7 @@ th{
 }
 .creamBox{
   background-color: #ffffcc;
+  background-image: none;
 }
 .greyBox{
   background-color: #80aaff;

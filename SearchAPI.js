@@ -37,7 +37,18 @@ $('form').submit(function(event) {
   });
 });
 
-
+document.getElementById('forestButton').onclick = function () {
+    document.getElementById('theme_css').href = "SearchAPI_Forest.css";
+};
+document.getElementById('beeButton').onclick = function () {
+    document.getElementById('theme_css').href = "SearchAPI.css";
+};
+document.getElementById('beachButton').onclick = function () {
+    document.getElementById('theme_css').href = "SearchAPI_Ocean.css";
+};
+document.getElementById('polarButton').onclick = function () {
+    document.getElementById('theme_css').href = "SearchAPI_Polar.css";
+};
 
 function parseResults(result){
   for (let i=0;i<result.results.length;i++){

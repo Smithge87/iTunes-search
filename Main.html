@@ -7,11 +7,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <meta name="Search API" content="Search API" />
-    <title>Search API</title>
+    <title>iTunes Search API</title>
     <link rel="stylesheet" type="text/css" href="SearchAPI_Forest.css">
-
     <link rel="stylesheet" type="text/css" href="SearchAPI_Ocean.css">
     <link rel="stylesheet" type="text/css" href="SearchAPI.css">
+    <link rel="stylesheet" type="text/css" href="SearchAPI_Polar.css">
+    <link type="text/css" rel="stylesheet" media="all" href="SearchAPI_Polar.css" id="theme_css" />
 
 </head>
 <div id="bannerRight">
@@ -21,10 +22,10 @@
       <div class="jumbotron jumbotron-fluid jumboBox">
         <div class="container">
           <div style="float:left">
-            <h1><b class="yellowText" >Search API</b></h1>
+            <h1><b class="yellowText" >iTunes Search API</b></h1>
             <p class="lead redText"><b>Welcome to it</b></p>
           </div>
-            <div class="blackBorder greyBox" style="width:20%; padding:10px; float:right">
+            <div class="blackBorderOne greyBox" style="width:20%; padding:10px; float:right">
               <form id="requestForm">
               <div class="form-group">
                 <label for="formGroupExampleInput">Artist</label>
@@ -42,10 +43,10 @@
 
     <br><br><br><br><br><br><br><br><br>
 
-    <div class="container blackBorder greyBox" style"width:100%">
+    <div class="container blackBorderTwo greyBox" style"width:100%">
       <table class="table">
         <thead>
-          <tr class="blackBorderSmall yellowShadow" style="margin-bottom:20px">
+          <tr class=" yellowShadow" style="margin-bottom:20px">
             <th></th>
             <th class="tableTitle">ARTIST</th>
             <th class="tableTitle">SONG</th>
@@ -64,14 +65,19 @@
     <div>
         <footer class="jumboBox" style" bottom:0">
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-lg-4">
                   <br><br><br>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-4">
+                  <p><center class="yellowText">All results and samples provided by iTunes</center></p>
                   <p><center class="yellowText"> Search API &copy; </center></p>
                 </div>
-                <div class="col-lg-3">
-                </div>
+                <div class="col-lg-4" style="padding-top:1%">
+                  <button id="forestButton" type="button" class="btn">Forest Theme</button>
+                  <button id="beeButton" type="button" class="btn">Bee Theme</button>
+                  <button id="beachButton" type="button" class="btn">Beach Theme</button>
+                  <button id="polarButton" type="button" class="btn">Polar Theme</button>
+              </div>
             </div>
         </footer>
     </div>
