@@ -61,12 +61,15 @@ th{
 }
 .jumboBox{
   background-color: #333300;
+  border-bottom: 4px solid #0d1a00;
+  border-top: 4px solid #0d1a00;
 }
 .yellowText{
   color: #bbbb77;
 }
 .yellowBox{
   background-color:  #bbbb77;
+  color: black;
 }
 .yellowShadow{
   text-shadow: 1px 0px 3px #bbbb77;
@@ -80,4 +83,5 @@ th{
 }
 .greyBox{
   background-color: #e6ffcc;
+  color:black;
 }

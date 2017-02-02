@@ -96,4 +96,5 @@ th{
 .greyBox{
   background-color: rgba(100,100,100,0.7);
   background-size: cover;
+  color: white;
 }
